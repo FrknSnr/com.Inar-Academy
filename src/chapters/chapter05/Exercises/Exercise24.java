@@ -1,4 +1,4 @@
-package chapters.Chapter05.Exercises;
+package chapters.chapter05.Exercises;
 
 public class Exercise24 {
 
