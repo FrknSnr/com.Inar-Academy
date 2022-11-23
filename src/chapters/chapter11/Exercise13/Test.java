@@ -15,17 +15,18 @@ public class Test {
     }
 
     public static void removeDuplicate(ArrayList<Integer> list) {
-        ArrayList<Integer> distincts = new ArrayList<>();
+        ArrayList<Integer> edited = new ArrayList<>();
         while (!list.isEmpty()) {
-            if (!distincts.contains(list.get(list.size() - 1))) {
-                distincts.add(list.remove(list.size() - 1));
-                list.remove(list.size()-1);
+            int n = list.remove(list.size() - 1);
+            if (!edited.contains(n)) {
+                edited.add(n);
             }
         }
-        for (int i = 0; i < distincts.size(); i++) {
-            System.out.print(distincts.get(i) + " ");
+        for (int i = 0; i < edited.size() ; i++) {
+            System.out.print(edited.get(i)+ " ");
         }
     }
+
 
     public static Integer[] fillTheArr(Scanner input) {
         Integer[] values = new Integer[10];

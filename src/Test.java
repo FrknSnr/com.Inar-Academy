@@ -1,17 +1,22 @@
-import javafx.scene.shape.Circle;
 
 import java.util.Scanner;
-
 public class Test {
     public static void main(String[] args) {
-
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter");
-        int i = input.nextInt();
-        String s = input.nextLine();
-
-        System.out.println(i);
-        System.out.println(s);
-
+        try {
+            method();
+            System.out.println("After the method call");
+        }
+        catch (ArithmeticException ex) {
+            System.out.println("ArithmeticException");
+        }
+        catch (RuntimeException ex) {
+            System.out.println("RuntimeException");
+        }
+        catch (Exception e) {
+            System.out.println("Exception");
+        }
+    }
+    static void method() throws Exception {
+        System.out.println(1 / 1);
     }
 }
