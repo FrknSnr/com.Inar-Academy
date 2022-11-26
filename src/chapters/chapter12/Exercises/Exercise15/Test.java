@@ -12,11 +12,12 @@ public class Test {
             System.out.println("The file is already exist");
             System.exit(0);
         }
-        ArrayList<Integer> list = new ArrayList<>(100);
         try(
                 PrintWriter output = new PrintWriter(file)
                 ){
-
-        }
+            for (int i = 0; i < 100; i++) {
+                output.print((int)(Math.random() * 100));
+            }
+        }//TODO
     }
 }
