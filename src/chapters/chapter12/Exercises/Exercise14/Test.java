@@ -21,7 +21,7 @@ public class Test {
                 Scanner input1 = new Scanner(file)
                 ){
             while(input1.hasNext()){
-                total += input.nextDouble();
+                total += input1.nextDouble();
                 countOfNums++;
             }
         }

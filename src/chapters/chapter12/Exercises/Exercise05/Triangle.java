@@ -49,8 +49,9 @@ public class Triangle extends GeometricObject {
     public double getPerimeter(){
         return getSide1() + getSide2() + getSide3() ;
     }
+    @Override
     public String toString(){
         return "The area of the triangle is : "+ getArea() + "\nThe perimeter is : " + getPerimeter() + "\nTriangle: side1 = " + side1 + " side2 = " + side2 +
-                " side3 = " + side3;
+                " side3 = " + side3  ;
     }
 }

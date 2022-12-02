@@ -7,6 +7,9 @@ public class Number {
     public Number(double value) {
         this.value = value;
     }
+    public Number(){
+        this(0);
+    }
 
     public double getValue() {
         return value;
