@@ -12,7 +12,7 @@ public class Test {
             System.exit(1);
         }
 
-        File file = new File(args[1]);
+        File file = new File(args[0]);
         if (!file.exists()) {
             System.out.println("al fuko");
             System.exit(1);
@@ -23,7 +23,7 @@ public class Test {
                 Scanner input = new Scanner(file)) {
             while (input.hasNext()) {
                 s = input.nextLine();
-                newS = s.replaceAll(args[0], "");
+                newS = s.replaceAll(args[1], "");
             }
         }
         try (
